@@ -1,0 +1,50 @@
+body, html {
+    height: 100%;
+}
+
+.hero {
+	height: 100%;
+	background-color: #FDD835;
+}
+
+.hero h1 {
+	position: relative;
+	text-align: center;
+	color: white;
+	padding-top: 20rem;
+	z-index: 2;
+}
+
+.hero h6 {
+	position: relative;
+	text-align: center;
+	color: white;
+	z-index: 2;
+}
+
+.circle {
+	position: absolute;
+	top: 30%;
+  	left: 50%;
+	background-image: url(jackie.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+}
+
+.links {
+	position: relative;
+	text-align: center;
+	color: white;
+	font-size: 1.5rem;
+	z-index: 2;
+}
+
+.links li {
+    display: inline;
+	color: white;
+	font-size: 1.5rem;
+}
