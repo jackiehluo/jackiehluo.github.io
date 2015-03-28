@@ -5,6 +5,7 @@ body, html {
 .hero {
 	height: 100%;
 	background-color: #FDD835;
+	cursor: default;
 }
 
 .hero h1 {
@@ -48,6 +49,20 @@ body, html {
 	color: white;
 	padding: 0px 10px;
 	font-size: 2rem;
+}
+
+.arrow {
+	position: relative;
+	text-align: center;
+	color: white;
+	font-size: 2rem;
+	padding-top: 5rem;
+	z-index: 2;
+}
+
+.arrow a:hover {
+	color: black;
+	cursor: pointer;
 }
 
 .navbar-wrapper {
