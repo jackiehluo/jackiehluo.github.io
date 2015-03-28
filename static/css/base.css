@@ -86,11 +86,12 @@ nav ul li p {
 	padding: 0.75rem 1.5rem; }
 nav ul li:hover {
 	cursor: pointer;
-	background-color: #eee; }
+	color: white;
+	background-color: #FDD835; }
 nav ul li.action-item {
 	color: white;
-	background-color: #4155E8; }
+	background-color: #212121; }
 nav ul li.action-item:hover {
 	color: white;
-	background-color: #3B4CD1; }
+	background-color: black; }
 nav ul.right { float:right; }

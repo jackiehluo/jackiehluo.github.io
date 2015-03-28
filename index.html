@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>JACKIE LUO</title>
-        <link rel="stylesheet" type="text/css" href="base.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Jackie Luo</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/base.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css">
     </head>
     <body>
         <div class="hero">
@@ -23,5 +23,53 @@
                 </ul>
             </div>
         </div>
+        <div class="navbar-wrapper">
+            <nav>
+                <div class="content">
+                    <ul>
+                        <li class="action-item"><a href="#top"><p>Jackie Luo</p></a></li>
+                        <li><a href="#about-me"><p>About Me</p></a></li>
+                        <li><a href="#skills"><p>Skills</p></a></li>
+                        <li><a href="#projects"><p>Projects</p></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <section id="about-me">
+            <div class="content">
+                <h2>About Me</h2>
+                <p>Hi, there! My name is Jackie Luo, and I'm a sophomore at Columbia University studying computer science and philosophy. I'm on the board of the <a href="http://coreatcu.com">Columbia Organization of Rising Entrepreneurs (CORE)</a> and part of <a href="https://github.com/adicu">ADI Labs</a>, a student-led initiative to build open-source projects for the Columbia community.</p>
+                <p>In CORE, I launched <a href="http://ignite.coreatcu.com">Ignite@CU</a> for undergraduate designers, developers, and entrepreneurs in New York City, with talks from companies like Shapeways, Fifty-Three, Bonobos, and more. I also led design and marketing for <a href="http://startupcolumbia.org">#StartupColumbia</a> and the #StartupColumbia Challenge, the university's first annual entrepreneurship festival and venture competition with a $50,000 prize pool for students.</p>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="content">
+                <h2>Skills</h2><br>
+                <h4>Object-Oriented Languages</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>Ruby</li>
+                </ul>
+                <h4>Web Development</h4>
+                <ul>
+                    <li>Python (Flask)</li>
+                    <li>JavaScript</li>
+                    <li>HTML/CSS</li>
+                </ul>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="content">
+                <h2>Projects</h2><br>
+                <a href="http://nonewfriends.herokuapp.com"><h4>No New Friends</h4></a>
+                <p>I developed an app to connect strangers at Columbia over coffee. Inspired by <a href="http://teawithstrangers.com">Tea with Strangers</a>, No New Friends is meant to give students who want to meet people outside of their normal circles the opportunity. The app is built in Flask and implements user registration and login with a PostgreSQL database and the Facebook Graph API for importing profile pictures. Users must have @columbia.edu email addresses to register and can then view each others' profiles and social media links and contact each other. No New Friends is currently deployed on <a href="http://nonewfriends.herokuapp.com">Heroku</a>, and you can view it on <a href="http://github.com/jackieluo/no-new-friends">GitHub</a>.</p>
+                <h4>Sentiment</h4></a>
+                <p>I'm currently working on an ADI Labs team of four to build Sentiment, an app that analyzes the sentiment on Columbia's campus based on students' online comments. As a back-end developer, I created a web scraper to get all comments on Bwog, the popular campus publication, for the last week. The SQL database stores information for each day, like the top comments for that week and the sentiment at that point in time. You can view it on <a href="http://github.com/adicu/sentiment">GitHub</a>.</p>
+            </div>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="/static/js/script.js"></script>
     </body>
 </html>

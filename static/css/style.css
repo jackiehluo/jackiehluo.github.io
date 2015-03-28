@@ -26,7 +26,7 @@ body, html {
 	position: absolute;
 	top: 30%;
   	left: 50%;
-	background-image: url(jackie.jpg);
+	background-image: url(/static/img/jackie.jpg);
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 50%;
@@ -47,4 +47,24 @@ body, html {
     display: inline;
 	color: white;
 	font-size: 1.5rem;
+}
+
+.navbar-wrapper {
+	height: 3rem;
+}
+
+nav {
+	position: relative;
+}
+
+nav.pinned {
+	position: fixed;
+	top: 0;
+	background-color: #f5f5f5;
+	transition: 0.2s ease background-color;
+	-webkit-transition: 0.2s ease background-color;
+}
+
+.content a {
+	font-weight: 600;
 }
