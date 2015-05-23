@@ -3,31 +3,31 @@ body, html {
 }
 
 .hero {
-	height: 100%;
-	background-color: #FDD835;
-	cursor: default;
+    height: 100%;
+    background-color: #FDD835;
+    cursor: default;
 }
 
 .hero h1 {
-	position: relative;
-	text-align: center;
-	color: white;
-	padding-top: 20rem;
-	z-index: 2;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 20rem;
+    z-index: 2;
 }
 
 .hero h6 {
-	position: relative;
-	text-align: center;
-	color: white;
-	z-index: 2;
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 2;
 }
 
 .circle {
-	position: absolute;
-	top: 30%;
-  	left: 50%;
-	background-image: url(/static/img/jackie.jpg);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    background-image: url(/static/img/jackie.jpg);
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 50%;
@@ -37,50 +37,119 @@ body, html {
 }
 
 .links {
-	position: relative;
-	text-align: center;
-	color: white;
-	font-size: 1.5rem;
-	z-index: 2;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 2;
 }
 
 .links li {
     display: inline;
-	color: white;
-	padding: 0px 10px;
-	font-size: 2rem;
+    color: white;
+    padding: 0px 10px;
+    font-size: 2rem;
 }
 
 .arrow {
-	position: relative;
-	text-align: center;
-	color: white;
-	font-size: 2rem;
-	padding-top: 5rem;
-	z-index: 2;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding-top: 5rem;
+    z-index: 2;
 }
 
-.arrow a:hover {
-	color: black;
-	cursor: pointer;
+@-webkit-keyframes hvr-hang {
+    0% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+
+    50% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    100% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+}
+
+@keyframes hvr-hang {
+    0% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+
+    50% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    100% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+}
+
+@-webkit-keyframes hvr-hang-sink {
+    100% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+}
+
+@keyframes hvr-hang-sink {
+    100% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+}
+
+.hvr-hang {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+    -webkit-animation-name: hvr-hang-sink, hvr-hang;
+    animation-name: hvr-hang-sink, hvr-hang;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+    cursor: pointer;
 }
 
 .navbar-wrapper {
-	height: 3rem;
+    height: 3rem;
 }
 
 nav {
-	position: relative;
+    position: relative;
 }
 
 nav.pinned {
-	position: fixed;
-	top: 0;
-	background-color: #f5f5f5;
-	transition: 0.2s ease background-color;
-	-webkit-transition: 0.2s ease background-color;
+    position: fixed;
+    top: 0;
+    background-color: #f5f5f5;
+    transition: 0.2s ease background-color;
+    -webkit-transition: 0.2s ease background-color;
 }
 
 .content a {
-	font-weight: 600;
+    font-weight: 600;
 }
