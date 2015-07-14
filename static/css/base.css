@@ -87,7 +87,7 @@ nav ul li p {
 nav ul li:hover {
 	cursor: pointer;
 	color: white;
-	background-color: #FDD835; }
+	background-color: #D32F2F; }
 nav ul li.action-item {
 	color: white;
 	background-color: #212121; }
