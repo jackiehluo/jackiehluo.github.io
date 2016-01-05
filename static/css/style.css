@@ -168,6 +168,6 @@ nav.pinned {
     -webkit-transition: 0.2s ease background-color;
 }
 
-.content a {
+.content a, b {
     font-weight: 600;
 }
