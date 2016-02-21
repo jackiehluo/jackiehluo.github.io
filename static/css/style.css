@@ -22,65 +22,30 @@ nav.pinned {
     height: 100%;
     background-color: #D32F2F;
     cursor: default;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
 }
 
 .circle {
-    -webkit-box-ordinal-group: 2;
-    -moz-box-ordinal-group: 2;
-    -ms-flex-order: 2;
-    -webkit-order: 2;
-    order: 0;
-    position: relative;
+    position: absolute;
     top: 30%;
     left: 50%;
     background-image: url(/static/img/jackie.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 50%;
     border-radius: 50%;
     width: 200px;
     height: 200px;
     transform: translate(-50%, -50%);
 }
 
-.info {
-    -webkit-box-ordinal-group: 2;
-    -moz-box-ordinal-group: 2;
-    -ms-flex-order: 2;
-    -webkit-order: 2;
-    order: 1;
-    margin-top: 10rem;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-}
-
-.info h1 {
-    -webkit-box-ordinal-group: 2;
-    -moz-box-ordinal-group: 2;
-    -ms-flex-order: 2;
-    -webkit-order: 2;
-    order: 0;
+.hero h1 {
     position: relative;
     text-align: center;
     color: white;
+    padding-top: 20rem;
     z-index: 2;
 }
 
-.info h6 {
-    -webkit-box-ordinal-group: 2;
-    -moz-box-ordinal-group: 2;
-    -ms-flex-order: 2;
-    -webkit-order: 2;
-    order: 1;
+.hero h6 {
     position: relative;
     text-align: center;
     color: white;
@@ -88,16 +53,6 @@ nav.pinned {
 }
 
 .links {
-    -webkit-box-ordinal-group: 2;
-    -moz-box-ordinal-group: 2;
-    -ms-flex-order: 2;
-    -webkit-order: 2;
-    order: 2;
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
     position: relative;
     text-align: center;
     color: white;
@@ -114,16 +69,11 @@ nav.pinned {
 }
 
 .arrow {
-    -webkit-box-ordinal-group: 2;
-    -moz-box-ordinal-group: 2;
-    -ms-flex-order: 2;
-    -webkit-order: 2;
-    order: 2;
     position: relative;
     text-align: center;
     color: white;
     font-size: 2rem;
-    padding-top: 2rem;
+    padding-top: 5rem;
     z-index: 2;
 }
 
@@ -223,3 +173,7 @@ nav.pinned {
 }
 
 @media only screen and (max-device-width: 480px) {
+    .hero h1  {
+        padding-top: 60rem;
+    }
+}
