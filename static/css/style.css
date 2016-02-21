@@ -22,37 +22,50 @@ nav.pinned {
     height: 100%;
     background-color: #D32F2F;
     cursor: default;
-}
-
-.hero h1 {
-    position: relative;
-    text-align: center;
-    color: white;
-    padding-top: 20rem;
-    z-index: 2;
-}
-
-.hero h6 {
-    position: relative;
-    text-align: center;
-    color: white;
-    z-index: 2;
+    display: flex;
+    flex-direction: column;
 }
 
 .circle {
-    position: absolute;
+    order: 0;
+    position: relative;
     top: 30%;
     left: 50%;
     background-image: url(/static/img/jackie.jpg);
     background-repeat: no-repeat;
-    background-position: 50%;
+    background-position: center center;
     border-radius: 50%;
     width: 200px;
     height: 200px;
     transform: translate(-50%, -50%);
 }
 
+.info {
+    order: 1;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.info h1 {
+    order: 0;
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.info h6 {
+    order: 1;
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
 .links {
+    order: 2;
+    flex: 1;
     position: relative;
     text-align: center;
     color: white;
@@ -69,11 +82,12 @@ nav.pinned {
 }
 
 .arrow {
+    order: 2;
     position: relative;
     text-align: center;
     color: white;
     font-size: 2rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
     z-index: 2;
 }
 
@@ -171,3 +185,5 @@ nav.pinned {
         transform: translateY(8px);
     }
 }
+
+@media only screen and (max-device-width: 480px) {
