@@ -173,6 +173,9 @@ nav.pinned {
 }
 
 @media only screen and (max-device-width: 480px) and (orientation: portrait) {
+    .hero {
+        zoom: 200%;
+    }
     .hero h1  {
         padding-top: 40rem;
     }
