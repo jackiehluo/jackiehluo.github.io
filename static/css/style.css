@@ -177,6 +177,9 @@ nav.pinned {
         zoom: 200%;
     }
     .hero h1  {
-        padding-top: 40rem;
+        padding-top: 50rem;
+    }
+    .arrow {
+        padding-top: 5rem;
     }
 }
