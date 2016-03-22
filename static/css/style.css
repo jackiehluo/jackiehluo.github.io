@@ -28,7 +28,7 @@ nav.pinned {
     position: absolute;
     top: 30%;
     left: 50%;
-    background-image: url(/static/img/jackie.jpg);
+    background-image: url(/static/img/jackie@1x.jpg);
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 50%;
@@ -181,5 +181,18 @@ nav.pinned {
     }
     .arrow {
         padding-top: 15rem;
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .circle {
+        background-image: url(/static/img/jackie@2x.jpg);
+        background-size: 200px 200px;
     }
 }
