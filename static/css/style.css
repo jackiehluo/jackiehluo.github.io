@@ -27,7 +27,6 @@ body, html {
     color: white;
     padding-top: 20rem;
     z-index: 2;
-    font-weight: 400;
 }
 
 .hero h6 {
@@ -35,7 +34,6 @@ body, html {
     text-align: center;
     color: white;
     z-index: 2;
-    font-weight: 600;
 }
 
 .links {
