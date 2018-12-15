@@ -1,187 +1,51 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
 body, html {
+    width: 100%;
     height: 100%;
+    padding: 0;
+    font-family: "Inter UI", Helvetica, sans-serif;
+    font-size: 16px;
+    color: #222222;
 }
 
-.hero {
-    height: 100%;
-    background-color: #dfc686;
-    cursor: default;
-}
-
-.circle {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    background-image: url(/static/img/jackie@1x.jpg);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    transform: translate(-50%, -50%);
-}
-
-.hero h1 {
-    position: relative;
-    text-align: center;
-    color: white;
-    padding-top: 20rem;
-    z-index: 2;
-}
-
-.hero h6 {
-    position: relative;
-    text-align: center;
-    color: white;
-    z-index: 2;
-}
-
-.links {
-    position: relative;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-left: -40px;
-    z-index: 2;
-}
-
-.links li {
-    display: inline;
-    color: white;
-    padding: 0px 10px;
-    font-size: 2rem;
-}
-
-.bio {
-    height: 100%;
-    cursor: default;
-}
-
-.content {
-    max-width: 55%;
-    text-align: center;
-    padding: 10rem 6rem;
-}
-
-.content a, b {
+a {
+    text-decoration: none;
+    color: inherit;
     font-weight: 600;
 }
 
-.hvr-hang {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-}
-.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
-    -webkit-animation-name: hvr-hang-sink, hvr-hang;
-    animation-name: hvr-hang-sink, hvr-hang;
-    -webkit-animation-duration: .3s, 1.5s;
-    animation-duration: .3s, 1.5s;
-    -webkit-animation-delay: 0s, .3s;
-    animation-delay: 0s, .3s;
-    -webkit-animation-timing-function: ease-out, ease-in-out;
-    animation-timing-function: ease-out, ease-in-out;
-    -webkit-animation-iteration-count: 1, infinite;
-    animation-iteration-count: 1, infinite;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-direction: normal, alternate;
-    animation-direction: normal, alternate;
-    cursor: pointer;
+a:hover {
+    color: #dfc686;
 }
 
-.hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.3s;
-    transition-property: transform;
+.center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
-    transform: scale(1.2);
+.padded-content {
+    padding: 15vh 30vh;
 }
 
-@-webkit-keyframes hvr-hang {
-    0% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px);
-    }
-
-    50% {
-        -webkit-transform: translateY(4px);
-        transform: translateY(4px);
-    }
-
-    100% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px);
-    }
+.questions .description {
+    font-size: 12px;
 }
 
-@keyframes hvr-hang {
-    0% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px);
-    }
-
-    50% {
-        -webkit-transform: translateY(4px);
-        transform: translateY(4px);
-    }
-
-    100% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px);
-    }
+.questions li {
+    margin: 10px 0;
 }
 
-@-webkit-keyframes hvr-hang-sink {
-    100% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px);
-    }
+.questions .download {
+    text-align: center;
+    margin-top: 80px;
 }
 
-@keyframes hvr-hang-sink {
-    100% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px);
-    }
-}
-
-@media only screen and (max-device-width: 480px) and (orientation: portrait) {
-    .hero {
-        zoom: 200%;
-    }
-    .hero h1  {
-        padding-top: 50rem;
-    }
-    .arrow {
-        padding-top: 15rem;
-    }
-    p {
-        font-size: 30px;
-        padding: 2rem 0;
-    }
-}
-
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-    .circle {
-        background-image: url(/static/img/jackie@2x.jpg);
-        background-size: 200px 200px;
-    }
+.questions .download a {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
 }
