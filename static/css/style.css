@@ -23,11 +23,12 @@ a:hover {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     text-align: center;
+    overflow: scroll;
 }
 
 .padded-content {
+    margin-top: auto !important;
     padding: 15vh 30vh;
 }
 
