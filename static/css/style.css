@@ -1,18 +1,17 @@
-@import url('https://rsms.me/inter/inter-ui.css');
-
 body, html {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    font-family: "Inter UI", Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: "pliego", Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
     color: #222222;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 a:hover {
@@ -52,7 +51,11 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+    body, html {
+        font-size: 18px;
+    }
+
     .padded-content {
-        padding: 5vh 10vh;
+        padding: 5vh 5vh;
     }
 }
