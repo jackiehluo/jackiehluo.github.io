@@ -15,7 +15,9 @@ a {
 }
 
 a:hover {
-    color: #dfc686;
+    text-shadow:
+        -1px 0 0 rgba(0, 0, 0, 0.5),
+        1px 0 0 rgba(0, 0, 0, 0.5);
 }
 
 .center {
@@ -41,21 +43,6 @@ a:hover {
 
 #orb-container canvas {
     display: block;
-}
-
-.no-webgl #orb-container {
-    display: none;
-}
-
-@keyframes fallback-pulse {
-    0%, 100% {
-        transform: scale(1);
-        opacity: 0.9;
-    }
-    50% {
-        transform: scale(1.05);
-        opacity: 1;
-    }
 }
 
 .padded-content {
