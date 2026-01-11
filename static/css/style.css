@@ -82,6 +82,6 @@ a:hover {
     }
 
     .padded-content {
-        padding: 3dvh 10vw;
+        padding: 3dvh 10vw 15dvh;
     }
 }
