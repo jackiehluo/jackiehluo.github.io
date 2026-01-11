@@ -1,6 +1,6 @@
 body, html {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     margin: 0;
     font-family: "pliego", Helvetica, sans-serif;
     font-weight: 300;
@@ -19,16 +19,48 @@ a:hover {
 }
 
 .center {
-    height: 100%;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
+#orb-container {
+    width: 100%;
+    height: 28vh;
+    min-height: 200px;
+    max-height: 320px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+#orb-container canvas {
+    display: block;
+}
+
+.no-webgl #orb-container {
+    display: none;
+}
+
+@keyframes fallback-pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+}
+
 .padded-content {
     max-width: 800px;
-    padding: 10vh 10vw;
+    padding: 4vh 10vw 10vh;
 }
 
 .questions .description {
@@ -50,8 +82,19 @@ a:hover {
     text-transform: uppercase;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .center {
+        justify-content: flex-start;
+        padding-top: 18dvh;
+    }
+
+    #orb-container {
+        height: 32dvh;
+        min-height: 180px;
+        margin-bottom: 8dvh;
+    }
+
     .padded-content {
-        padding: 5vh 10vw;
+        padding: 3dvh 10vw;
     }
 }
