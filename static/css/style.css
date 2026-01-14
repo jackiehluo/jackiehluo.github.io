@@ -47,7 +47,8 @@ a:hover {
 
 .padded-content {
     max-width: 760px;
-    padding: 4vh 10vw 10vh;
+    padding: 4vh 10vw 8em;
+    position: relative;
 }
 
 .questions .description {
@@ -69,6 +70,31 @@ a:hover {
     text-transform: uppercase;
 }
 
+.astro {
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.astro .placement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.astro .type {
+    font-size: 10px;
+}
+
+.astro .sign {
+    font-size: 14px;
+}
+
 @media (max-width: 768px) {
     .center {
         justify-content: flex-start;
@@ -82,6 +108,6 @@ a:hover {
     }
 
     .padded-content {
-        padding: 3dvh 10vw 15dvh;
+        padding: 3dvh 10vw 8em;
     }
 }
