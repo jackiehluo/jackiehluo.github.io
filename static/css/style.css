@@ -46,9 +46,13 @@ a:hover {
 }
 
 .padded-content {
-    max-width: 760px;
+    max-width: 730px;
     padding: 4vh 10vw 8em;
     position: relative;
+}
+
+.padded-content p {
+    text-wrap: pretty;
 }
 
 .questions .description {
