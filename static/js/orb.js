@@ -212,12 +212,12 @@ class OpalOrb {
       this.container.clientWidth,
       this.container.clientHeight
     );
-    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
     this.container.appendChild(this.renderer.domElement);
   }
 
   createOrb() {
-    const geometry = new THREE.IcosahedronGeometry(1, 128);
+    const geometry = new THREE.IcosahedronGeometry(1, 48);
 
     this.orbMaterial = new THREE.ShaderMaterial({
       uniforms: {
